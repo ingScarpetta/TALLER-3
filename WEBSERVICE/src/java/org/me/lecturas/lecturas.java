@@ -25,4 +25,14 @@ public class lecturas {
     public String hello(@WebParam(name = "name") String txt) {
         return "Hello " + txt + " !";
     }
+
+    /**
+     * Web service operation
+     */
+    @WebMethod(operationName = "suma")
+    public int suma(@WebParam(name = "a") int a, @WebParam(name = "b") int b) {
+        //TODO write your implementation code here:
+        int k = a + b;
+        return k;
+    }
 }
